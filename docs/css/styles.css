@@ -1,9 +1,9 @@
 * {
-    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(210, 225, 240);
+    background-color: rgb(247, 217, 192);
     font-family: Arial, sans-serif;
     font-size: 12px;
     line-height: 2;
@@ -12,15 +12,17 @@ body {
 }
 
 .header {
-    background-color: rgb(10, 40, 80);
+    background: linear-gradient(to right, rgb(0, 52, 157), rgb(0, 34, 78));
     color: rgb(255, 255, 255);
-    padding: 20px;
+    padding: 0px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .menu {
-    background: rgb(5, 20, 50);
+    background: linear-gradient(to right, rgb(0, 52, 157), rgb(0, 34, 78));
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 .menu a {
@@ -31,16 +33,29 @@ body {
 
 .middle {
     display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 .box-left, .box-right {
-    background-color: rgb(100, 140, 180);
-    padding: 20px;
+    background-color: rgb(157, 199, 241);
+    padding: 0px;
     width: 50%;
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+    border-radius: 10px;
+}
+
+.box-left p, .box-right a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    padding: 5px;
 }
 
 .content {
-    background-color: rgb(100, 140, 180);
+    background-color: rgb(157, 199, 241);
     padding: 20px;
 }
 
@@ -49,12 +64,14 @@ body {
     color: rgb(255, 255, 255);
     padding: 10px;
     text-align: center;
+    margin-top: 15px;
+    border-radius: 10px;
 }
 
 .footer a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 th, td {
@@ -66,3 +83,47 @@ th {
     background-color: rgb(10, 40, 80);
     color: white;
 }
+
+.images {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.images p {
+    font-style: italic;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.item {
+    width: 45%;
+    flex: 0 0 45%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item p {
+    font-style: italic;
+    text-align: center;
+}
+
+
