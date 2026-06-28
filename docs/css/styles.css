@@ -9,12 +9,23 @@ body {
     line-height: 2;
     padding: 20px;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 .header {
     background: linear-gradient(to right, rgb(0, 52, 157), rgb(0, 34, 78));
     color: rgb(255, 255, 255);
     padding: 0px;
+    width: 100%;
     text-align: center;
     border-radius: 10px;
 }
@@ -23,12 +34,14 @@ body {
     background: linear-gradient(to right, rgb(0, 52, 157), rgb(0, 34, 78));
     padding: 10px;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .menu a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin-right: 15px;
+    width: 100%;
 }
 
 .middle {
@@ -36,6 +49,7 @@ body {
     gap: 5px;
     justify-content: center;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .box-left, .box-right {
@@ -45,6 +59,7 @@ body {
     margin-left: 0.5px;
     margin-right: 0.5px;
     border-radius: 10px;
+    width: 100%;
 }
 
 .box-left p, .box-right a {
@@ -57,6 +72,9 @@ body {
 .content {
     background-color: rgb(157, 199, 241);
     padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    width: 100%;
 }
 
 .footer {
@@ -66,6 +84,7 @@ body {
     text-align: center;
     margin-top: 15px;
     border-radius: 10px;
+    width: 100%;
 }
 
 .footer a {
@@ -102,11 +121,11 @@ th {
     gap: 20px;
     justify-content: center;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .item {
-    width: 45%;
-    flex: 0 0 45%;
+    width: 100%;
     text-align: center;
     display: block;
     margin-left: auto;
